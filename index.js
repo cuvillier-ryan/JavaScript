@@ -10,5 +10,3 @@ function isLeap(year) {
     return "Not leap year."
   }
 }
-
-//Another test
