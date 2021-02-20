@@ -26,3 +26,5 @@ function isLeapToo(year){
     return "Not leap year.";
   }
 }
+
+// Test
