@@ -27,7 +27,7 @@ function isLeapToo(year) {
   }
 }
 
-//Basic array fizzBuzz
+//FizzBuzz while loop
 
 var output = [];
 var count = 1;
@@ -51,12 +51,13 @@ let fizzBuzz = function() {
   console.log(output);
 }
 
+// FizzBuzz For Loop
+
 var output = [];
-var count = 1;
 
 let fizzBuzz = function() {
 
-  for(var i = 1; i <= 100; i++) {
+  for(var count = 1; count <= 100; count++) {
 
     if (count % 3 === 0 && count % 5 === 0) {
       output.push("FizzBuzz");
@@ -67,8 +68,6 @@ let fizzBuzz = function() {
     } else {
       output.push(count)
     }
-
-    count++
   }
   console.log(output);
 }
