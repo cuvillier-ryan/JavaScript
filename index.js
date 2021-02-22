@@ -27,7 +27,7 @@ function isLeapToo(year) {
   }
 }
 
-//Basic FizzBuzz
+//Basic array fizzBuzz
 
 var output = [];
 var count = 1;
