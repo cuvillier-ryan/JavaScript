@@ -47,3 +47,5 @@ let fizzBuzz = function(){
     count++
     console.log(output);
 }
+
+//Test
