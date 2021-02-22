@@ -32,20 +32,34 @@ function isLeapToo(year) {
 var output = [];
 var count = 1;
 
-let fizzBuzz = function(){
+let fizzBuzz = function() {
 
-    if(count % 3 === 0 && count % 5 === 0){
-        output.push("Fizz Buzz");
-    } else if(count % 3 === 0){
-        output.push("Fizz");
-    } else if(count % 5 === 0 ){
-        output.push("Buzz");
-    } else {
-        output.push(count)
-    }
+  if (count % 3 === 0 && count % 5 === 0) {
+    output.push("Fizz Buzz");
+  } else if (count % 3 === 0) {
+    output.push("Fizz");
+  } else if (count % 5 === 0) {
+    output.push("Buzz");
+  } else {
+    output.push(count)
+  }
 
-    count++
-    console.log(output);
+  count++
+  console.log(output);
 }
 
 //Test
+
+// Random person selector
+
+var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+
+function whosPaying(names) {
+
+  var numberOfPeople = names.length;
+  var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+  var randomPerson = names[randomPersonPosition];
+
+  return randomPerson + " is going to buy lunch today!"
+
+}
