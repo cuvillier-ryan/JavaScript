@@ -29,40 +29,21 @@ function isLeapToo(year) {
 
 //Basic FizzBuzz
 
-// var output = [];
-// var count = 1;
-//
-// let fizzBuzz = function(){
-//
-//     if(count % 3 === 0){
-//         output.push("Fizz");
-//     } else if(count % 5 === 0){
-//         output.push("Buzz");
-//     } else if(count % 3 === 0 && count % 5 === 0){
-//         output.push("Fizz Buzz");
-//     } else {
-//         output.push(count);
-//     }
-//
-//
-//     count++
-//     console.log(output);
-//
-// }
+var output = [];
+var count = 1;
 
-let fizzBuzz = function() {
-  for (let i = 0; i < 100; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("Fizz Buzz");
-    } else if (i % 3 === 0) {
-      console.log("Fizz");
-    } else if (i % 5 === 0) {
-      console.log("Buzz");
+let fizzBuzz = function(){
+
+    if(count % 3 === 0 && count % 5 === 0){
+        output.push("Fizz Buzz");
+    } else if(count % 3 === 0){
+        output.push("Fizz");
+    } else if(count % 5 === 0 ){
+        output.push("Buzz");
     } else {
-      console.log(i);
+        output.push(count)
     }
-  }
-}
 
-//Test
-// Test
+    count++
+    console.log(output);
+}
